@@ -1,0 +1,60 @@
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .fixture-card {
+    width: 23%;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .fixture-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+  }
+
+  .fixture-info {
+    padding: 16px;
+  }
+
+  .fixture-date {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+
+  .fixture-teams {
+    font-size: 14px;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+  }
+
+  .fixture-result {
+    font-size: 16px;
+    font-weight: bold;
+    color: #007bff;
+  }
+
+  .fixture-details {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .title_1{
+    color: #fff;
+    font-size: 25px;
+  }
+
+  .fixture-card .img_1 {
+    margin-right: 10px;
+    width: 30px;
+    height: auto;
+  }
