@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Competiciones</title>
+</head>
+<body class="bg-emerald-400">
+     <!--menu INICIO-->
+     <div class="mx-auto">
+        <nav class="bg-cyan-950 py-6 relative">
+            <div class="container_logo flex px-8 xl:px-0">
+                <div class="flex flex-grow items-center">
+                    <h2 class="text-zinc-100 text-3xl ml-4">E&A Sports</h2>
+                </div>
+                <div class="flex lg:hidden">
+                    <img src="imagenes/menu-regular-48.png" onclick="abrirmenu();">
+                </div>
+                <div id="menu"
+                    class="lg:flex hidden flex-grow justify-between absolute lg:relative lg:top-0 top-20 left-0 bg-cyan-950 w-full lg:w-auto items-center py-14 lg:py-0 px-8 sm:px-24 lg:px-0">
+                    <div class="flex flex-col lg:flex-row mb-8 lg:mb-0 sm:text-center">
+                        <a href="./EyA_SAS/partidos.html"
+                            class="text-zinc-100 hover:text-emerald-400 lg:mr-7 mb-8 lg:mb-0">Partidos</a>
+                        <a href="./selecciones/equipos.html"
+                            class="text-zinc-100 hover:text-emerald-400 lg:mr-7 mb-8 lg:mb-0">Equipos</a>
+                        <a href="competiciones.html" class="text-zinc-100 hover:text-emerald-400 lg:mr-7 mb-8 lg:mb-0">Competiciones</a>
+                        <a href="https://www.rojadirectaenvivo.nl/" class="text-zinc-100 hover:text-emerald-400 ">Tv</a>
+                    </div>
+                    <div class="flex flex-col lg:flex-row text-center">
+                        <a href="login.html"
+                            class="text-zinc-100 border border-white py-2.5 px-5 rounded-md hover:bg-white hover:text-gray-800 transition duration-500 ease-in-out lg:mr-4 mb-8 lg:mb-0">INICIAR
+                            SESIÓN</a>
+                        <a href="login.html"
+                            class="text-zinc-100 bg-blue-500 border border-blue-500 py-2.5 px-5 rounded-md hover:bg-blue-600 text hover:border-blue-600 hover:border-blue-600 transition duration-500 ease-in-out">ÚNETE</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!--Fin Menu-->
+    <div class="container mx-auto mt-8">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            <!-- Carta 1 -->
+            <div class="max-w-sm rounded overflow-hidden shadow-lg bg-white">
+                <img class="w-full h-48 object-cover" src="liga1.jpg" alt="Liga 1">
+                <div class="px-6 py-4">
+                    <div class="font-bold text-xl mb-2">Liga 1</div>
+                    <p class="text-gray-700 text-base">
+                        Descripción de la Liga 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                </div>
+            </div>
+    
+            <!-- Carta 2 -->
+            <div class="max-w-sm rounded overflow-hidden shadow-lg bg-white">
+                <img class="w-full h-48 object-cover" src="liga2.jpg" alt="Liga 2">
+                <div class="px-6 py-4">
+                    <div class="font-bold text-xl mb-2">Liga 2</div>
+                    <p class="text-gray-700 text-base">
+                        Descripción de la Liga 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                </div>
+            </div>
+    
+            <!-- Carta 3 -->
+            <div class="max-w-sm rounded overflow-hidden shadow-lg bg-white">
+                <img class="w-full h-48 object-cover" src="liga3.jpg" alt="Liga 3">
+                <div class="px-6 py-4">
+                    <div class="font-bold text-xl mb-2">Liga 3</div>
+                    <p class="text-gray-700 text-base">
+                        Descripción de la Liga 3. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                </div>
+            </div>
+    
+            <!-- Puedes agregar más cartas según sea necesario -->
+    
+        </div>
+    </div>
+    
+</body>
+</html>

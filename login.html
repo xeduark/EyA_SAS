@@ -21,8 +21,8 @@
                         <input class="p-2 rounded-xl border w-full" type="text" name="password" placeholder="Password"
                             id="">
                     </div>
-                    <button class="bg-blue-600 rounded-xl text-white py-2 hover:scale-105 duration-300"
-                        onclick="redirect()">Log in</button>
+                    <button onclick="redirect()"
+                        class="bg-blue-600 rounded-xl text-white py-2 hover:scale-105 duration-300">Log in</button>
                 </form>
 
                 <div class="mt-10 grid grid-cols-3 items-center text-gray-500">
@@ -30,14 +30,17 @@
                     <p class="text-center text-sm">-OR-</p>
                     <br class="border-gray-500">
                 </div>
-                <button class="bg-red-500 text-white  border py-2 w-full rounded-xl mt-5 flex justify-center text-sm hover:scale-105 duration-300">Login with
+                <button onclick="redirect()"
+                    class="bg-red-500 text-white  border py-2 w-full rounded-xl mt-5 flex justify-center text-sm hover:scale-105 duration-300">Login
+                    with
                     Google</button>
                 <p class="mt-10 text-xs border-b border-gray-400 py-4">Forgot your password
                 </p>
 
                 <div class=" mt-3 text-xs flex justify-between items-center">
                     <p>If you don't have an account?...</p>
-                    <button class="py-2 px-5 bg-blue-600 text-white border rounded-xl hover:scale-110 duration-300">Register</button>
+                    <button
+                        class="py-2 px-5 bg-blue-600 text-white border rounded-xl hover:scale-110 duration-300">Register</button>
                 </div>
 
             </div>
