@@ -2,207 +2,219 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
   <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <link rel="stylesheet" href="partidos.css">
-    <title>EyA.SAS</title>
+  <title>EyA.SAS</title>
 </head>
 
 <body class="bg-emerald-400">
-   
-    <!--menu INICIO-->
-    <div class="mx-auto">
-      <nav class="bg-cyan-950 py-6 relative">
-          <div class="container_logo flex px-8 xl:px-0">
-              <div class="flex flex-grow items-center">
-                  <h2 class="text-zinc-100 text-3xl ml-4">E&A Sports</h2>
-              </div>
-              <div class="flex lg:hidden">
-                  <img src="imagenes/menu-regular-48.png" onclick="abrirmenu();">
-              </div>
-              <div id="menu"
-                  class="lg:flex hidden flex-grow justify-between absolute lg:relative lg:top-0 top-20 left-0 bg-cyan-950 w-full lg:w-auto items-center py-14 lg:py-0 px-8 sm:px-24 lg:px-0">
-                  <div class="flex flex-col lg:flex-row mb-8 lg:mb-0 sm:text-center">
-                      <a href="#" class="text-zinc-100 hover:text-emerald-400 lg:mr-7 mb-8 lg:mb-0">Partidos</a>
-                      <a href="#" class="text-zinc-100 hover:text-emerald-400 lg:mr-7 mb-8 lg:mb-0">Equipos</a>
-                      <a href="#" class="text-zinc-100 hover:text-emerald-400 lg:mr-7 mb-8 lg:mb-0">Competiciones</a>
-                      <a href="#" class="text-zinc-100 hover:text-emerald-400 ">Tv</a>
-                  </div>
-                  <div class="flex flex-col lg:flex-row text-center">
-                      <a href="#"
-                          class="text-zinc-100 border border-white py-2.5 px-5 rounded-md hover:bg-white hover:text-gray-800 transition duration-500 ease-in-out lg:mr-4 mb-8 lg:mb-0">INICIAR
-                          SESIÓN</a>
-                      <a href="#"
-                          class="text-zinc-100 bg-blue-500 border border-blue-500 py-2.5 px-5 rounded-md hover:bg-blue-600 text hover:border-blue-600 hover:border-blue-600 transition duration-500 ease-in-out">ÚNETE</a>
-                  </div>
-              </div>
-          </div>
-      </nav>
-      <!--Fin Menu-->
-       
-</head>
-    <style>
-        #calendar-container {
-          width: 80%;
-          margin: auto;
-        }
-    
-        #calendar-slider {
-          overflow: hidden;
-        }
-    
-        .ui-datepicker {
-          width: 100%;
-        }
-    
-        .ui-datepicker-inline {
-          display: block;
-          border: none;
-        }
-      </style>
-      <script>
-        $(function() {
-          $("#calendar-slider").datepicker({
-            numberOfMonths: 3, // Mostrar tres meses en cada slide
-            showButtonPanel: true // Mostrar botones de siguiente y anterior
-          });
-        });
-      </script>
-      <br>
-   <div id="calendar-container">
-        <div id="calendar-slider"></div>
-      </div>
 
-         
+  <!--menu INICIO-->
+  <div class="mx-auto">
+    <nav class="bg-cyan-950 py-6 relative">
+      <div class="container_logo flex px-8 xl:px-0">
+        <div class="flex flex-grow items-center">
+          <h2 class="text-zinc-100 text-3xl ml-4">E&A Sports</h2>
+        </div>
+        <div class="flex lg:hidden">
+          <img src="./imagenes/menu-regular-48.png" onclick="abrirmenu();">
+        </div>
+        <div id="menu"
+          class="lg:flex hidden flex-grow justify-between absolute lg:relative lg:top-0 top-20 left-0 bg-cyan-950 w-full lg:w-auto items-center py-14 lg:py-0 px-8 sm:px-24 lg:px-0">
+          <div class="flex flex-col lg:flex-row mb-8 lg:mb-0 sm:text-center">
+            <a href="./principales/.index.html" class="text-zinc-100 hover:text-emerald-400 lg:mr-7 mb-8 lg:mb-0">Home</a>
+            <a href="#" class="text-zinc-100 hover:text-emerald-400 lg:mr-7 mb-8 lg:mb-0">Partidos</a>
+            <a href="./selecciones/equipos.html"
+              class="text-zinc-100 hover:text-emerald-400 lg:mr-7 mb-8 lg:mb-0">Equipos</a>
+            <a href="#" class="text-zinc-100 hover:text-emerald-400 lg:mr-7 mb-8 lg:mb-0">Competiciones</a>
+            <a href="https://www.rojadirectaenvivo.nl/" class="text-zinc-100 hover:text-emerald-400 ">Tv</a>
+          </div>
+          <div class="flex flex-col lg:flex-row text-center">
+            <a href="#"
+              class="text-zinc-100 border border-white py-2.5 px-5 rounded-md hover:bg-white hover:text-gray-800 transition duration-500 ease-in-out lg:mr-4 mb-8 lg:mb-0">INICIAR
+              SESIÓN</a>
+            <a href="#"
+              class="text-zinc-100 bg-blue-500 border border-blue-500 py-2.5 px-5 rounded-md hover:bg-blue-600 text hover:border-blue-600 hover:border-blue-600 transition duration-500 ease-in-out">ÚNETE</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!--Fin Menu-->
+
+    </head>
+    <style>
+      #calendar-container {
+        width: 80%;
+        margin: auto;
+      }
+
+      #calendar-slider {
+        overflow: hidden;
+      }
+
+      .ui-datepicker {
+        width: 100%;
+      }
+
+      .ui-datepicker-inline {
+        display: block;
+        border: none;
+      }
+    </style>
+    <script>
+      $(function () {
+        $("#calendar-slider").datepicker({
+          numberOfMonths: 3, // Mostrar tres meses en cada slide
+          showButtonPanel: true // Mostrar botones de siguiente y anterior
+        });
+      });
+    </script>
     <br>
-    <br> 
+    <div id="calendar-container">
+      <div id="calendar-slider"></div>
+    </div>
+
+
+    <br>
+    <br>
     <h1 class="title_1">Clasificación de la Conmebol para la copa mundial de fútbol 2026</h1>
     <h1 class="title_1">Jornada 6 de 18</h1>
 
-      <div class="cards-container">
-        <div class="fixture-card">
-          <img src="img/defensores.jpg" alt="Estadio 1">
-          <div class="fixture-info">
-            <div class="fixture-date">Fecha: 21/11/2023</div>
-            <div class="fixture-teams"><img src="img/paraguay.jpg" class="img_1" ><span>Paraguay vs </span>  <img src="img/colombia.jpg" class="img_1"><span>Colombia</span></div>
-            <div class="fixture-details">Estadio: Defensores del Chaco</div>
-            <div class="fixture-result">Resultado: 0 - 1</div>
-            <div class="fixture-details">Hora: 6:00pm</div>
-          </div>
+    <div class="cards-container">
+      <div class="fixture-card">
+        <img src="img/defensores.jpg" alt="Estadio 1">
+        <div class="fixture-info">
+          <div class="fixture-date">Fecha: 21/11/2023</div>
+          <div class="fixture-teams"><img src="img/paraguay.jpg" class="img_1"><span>Paraguay vs </span> <img
+              src="img/colombia.jpg" class="img_1"><span>Colombia</span></div>
+          <div class="fixture-details">Estadio: Defensores del Chaco</div>
+          <div class="fixture-result">Resultado: 0 - 1</div>
+          <div class="fixture-details">Hora: 6:00pm</div>
         </div>
-    
-        <div class="fixture-card">
-          <img src="img/atahualpa.jpg" alt="Estadio 2">
-          <div class="fixture-info">
-            <div class="fixture-date">Fecha: 21/11/2023</div>
-            <div class="fixture-teams"><img src="img/bandera-ecuador.jpg" class="img_1" ><span>Ecuador vs </span>  <img src="img/bandera-chile.jpg" class="img_1"><span>Chile</span></div>
-            <div class="fixture-details">Estadio: Estadio Olimpico Atahualpa</div>
-            <div class="fixture-result">Resultado: 1 - 0</div>
-            <div class="fixture-details">Hora: 6:30pm</div>
-          </div>
+      </div>
+
+      <div class="fixture-card">
+        <img src="img/atahualpa.jpg" alt="Estadio 2">
+        <div class="fixture-info">
+          <div class="fixture-date">Fecha: 21/11/2023</div>
+          <div class="fixture-teams"><img src="img/bandera-ecuador.jpg" class="img_1"><span>Ecuador vs </span> <img
+              src="img/bandera-chile.jpg" class="img_1"><span>Chile</span></div>
+          <div class="fixture-details">Estadio: Estadio Olimpico Atahualpa</div>
+          <div class="fixture-result">Resultado: 1 - 0</div>
+          <div class="fixture-details">Hora: 6:30pm</div>
         </div>
-        <div class="fixture-card">
-            <img src="img/uruguay.jpg" alt="Estadio 2">
-            <div class="fixture-info">
-              <div class="fixture-date">Fecha: 21/11/2023</div>
-              <div class="fixture-teams"><img src="img/bandera-uruguay.jpg" class="img_1" ><span>Uruguay vs </span>  <img src="img/bandera-bolivia.jpg" class="img_1"><span>Bolivia</span></div>
-              <div class="fixture-details">Estadio: Estadio Centenario</div>
-              <div class="fixture-result">Resultado: 3 - 0</div>
-              <div class="fixture-details">Hora: 6:30pm</div>
-            </div>
-          </div>
-          <div class="fixture-card">
-            <img src="img/maracana.jpg" alt="Estadio 2">
-            <div class="fixture-info">
-              <div class="fixture-date">Fecha: 21/11/2023</div>
-              <div class="fixture-teams"><img src="img/bandera-brasil.jpg" class="img_1" ><span>Brasil vs </span>  <img src="img/bandera-argentina.jpg" class="img_1"><span>Uruguay</span></div>
-              
-              <div class="fixture-details">Estadio: Maracaná</div>
-              <div class="fixture-result">Resultado: 0 - 1</div>
-              <div class="fixture-details">Hora: 6:30pm</div>
-            </div>
-          </div>
-          <div class="fixture-card">
-            <img src="img/peru.jpg" alt="Estadio 2">
-            <div class="fixture-info">
-              <div class="fixture-date">Fecha: 21/11/2023</div>
-              <div class="fixture-teams"><img src="img/bandera-peru.jpg" class="img_1" ><span>Peru vs </span>  <img src="img/bandera-venezuela.jpg" class="img_1"><span>Venezuela</span></div>
-              
-              <div class="fixture-details">Estadio: Estadio Nacional de Lima</div>
-              <div class="fixture-result">Resultado: 1 - 1</div>
-              <div class="fixture-details">Hora: 6:30pm</div>
-            </div>
-          </div>
+      </div>
+      <div class="fixture-card">
+        <img src="img/uruguay.jpg" alt="Estadio 2">
+        <div class="fixture-info">
+          <div class="fixture-date">Fecha: 21/11/2023</div>
+          <div class="fixture-teams"><img src="img/bandera-uruguay.jpg" class="img_1"><span>Uruguay vs </span> <img
+              src="img/bandera-bolivia.jpg" class="img_1"><span>Bolivia</span></div>
+          <div class="fixture-details">Estadio: Estadio Centenario</div>
+          <div class="fixture-result">Resultado: 3 - 0</div>
+          <div class="fixture-details">Hora: 6:30pm</div>
         </div>
+      </div>
+      <div class="fixture-card">
+        <img src="img/maracana.jpg" alt="Estadio 2">
+        <div class="fixture-info">
+          <div class="fixture-date">Fecha: 21/11/2023</div>
+          <div class="fixture-teams"><img src="img/bandera-brasil.jpg" class="img_1"><span>Brasil vs </span> <img
+              src="img/bandera-argentina.jpg" class="img_1"><span>Uruguay</span></div>
 
-        <h1 class="title_1">Jornada 7 de 18</h1>
-         
-        <div class="cards-container">
-          <div class="fixture-card">
-            <img src="img/uruguay.jpg" alt="Estadio 1">
-            <div class="fixture-info">
-              <div class="fixture-date">Fecha: 05/09/2024</div>
-              <div class="fixture-teams"><img src="img/bandera-uruguay.jpg" class="img_1" ><span>Uruguay vs </span>  <img src="img/paraguay.jpg" class="img_1"><span>Paraguay</span></div>
-              <div class="fixture-details">Estadio: Estadio Centenario</div>
-              <div class="fixture-details">Hora: Por definirse</div>
-            </div>
-          </div>
-      
-          <div class="fixture-card">
-            <img src="img/lapaz.jpg" alt="Estadio 2">
-            <div class="fixture-info">
-              <div class="fixture-date">Fecha: 05/09/2024</div>
-              <div class="fixture-teams"><img src="img/bandera-bolivia.jpg" class="img_1" ><span>Bolivia vs </span>  <img src="img/bandera-venezuela.jpg" class="img_1"><span>Venezuela</span></div>
-              <div class="fixture-details">Estadio: Hernando Siles</div>
-              <div class="fixture-details">Hora: Por definirse</div>
-            </div>
-          </div>
-          <div class="fixture-card">
-              <img src="img/maracana.jpg" alt="Estadio 2">
-              <div class="fixture-info">
-                <div class="fixture-date">Fecha: 05/09/2024</div>
-                <div class="fixture-teams"><img src="img/bandera-brasil.jpg" class="img_1" ><span>Brasil vs </span>  <img src="img/bandera-ecuador.jpg" class="img_1"><span>Ecuador</span></div>
-                <div class="fixture-details">Estadio: Maracaná</div>
-                <div class="fixture-details">Hora: Por definirse</div>
-              </div>
-            </div>
-            <div class="fixture-card">
-              <img src="img//peru.jpg" alt="Estadio 2">
-              <div class="fixture-info">
-                <div class="fixture-date">Fecha: 05/09/2024</div>
-                <div class="fixture-teams"><img src="img/bandera-peru.jpg" class="img_1" ><span>Perú vs </span>  <img src="img/colombia.jpg" class="img_1"><span>Colombia</span></div>
-                
-                <div class="fixture-details">Estadio: Estadio Nacional de Lima</div>
-                <div class="fixture-details">Hora: Por definirse</div>
-              </div>
-            </div>
-            <div class="fixture-card">
-              <img src="img/kempes.jpg" alt="Estadio 2">
-              <div class="fixture-info">
-                <div class="fixture-date">Fecha: 05/09/2024</div>
-                <div class="fixture-teams"><img src="img/bandera-argentina.jpg" class="img_1" ><span>Argentina vs </span>  <img src="img/bandera-chile.jpg" class="img_1"><span>Chile</span></div>
-                
-                <div class="fixture-details">Estadio: Mario Alberto Kempes</div>
-                <div class="fixture-details">Hora: Por definirse</div>
-              </div>
-            </div>
-          </div>
-      
-          
-          
+          <div class="fixture-details">Estadio: Maracaná</div>
+          <div class="fixture-result">Resultado: 0 - 1</div>
+          <div class="fixture-details">Hora: 6:30pm</div>
+        </div>
+      </div>
+      <div class="fixture-card">
+        <img src="img/peru.jpg" alt="Estadio 2">
+        <div class="fixture-info">
+          <div class="fixture-date">Fecha: 21/11/2023</div>
+          <div class="fixture-teams"><img src="img/bandera-peru.jpg" class="img_1"><span>Peru vs </span> <img
+              src="img/bandera-venezuela.jpg" class="img_1"><span>Venezuela</span></div>
 
-         
+          <div class="fixture-details">Estadio: Estadio Nacional de Lima</div>
+          <div class="fixture-result">Resultado: 1 - 1</div>
+          <div class="fixture-details">Hora: 6:30pm</div>
+        </div>
+      </div>
+    </div>
 
-        
-         
-           
-          
+    <h1 class="title_1">Jornada 7 de 18</h1>
 
-        
+    <div class="cards-container">
+      <div class="fixture-card">
+        <img src="img/uruguay.jpg" alt="Estadio 1">
+        <div class="fixture-info">
+          <div class="fixture-date">Fecha: 05/09/2024</div>
+          <div class="fixture-teams"><img src="img/bandera-uruguay.jpg" class="img_1"><span>Uruguay vs </span> <img
+              src="img/paraguay.jpg" class="img_1"><span>Paraguay</span></div>
+          <div class="fixture-details">Estadio: Estadio Centenario</div>
+          <div class="fixture-details">Hora: Por definirse</div>
+        </div>
+      </div>
+
+      <div class="fixture-card">
+        <img src="img/lapaz.jpg" alt="Estadio 2">
+        <div class="fixture-info">
+          <div class="fixture-date">Fecha: 05/09/2024</div>
+          <div class="fixture-teams"><img src="img/bandera-bolivia.jpg" class="img_1"><span>Bolivia vs </span> <img
+              src="img/bandera-venezuela.jpg" class="img_1"><span>Venezuela</span></div>
+          <div class="fixture-details">Estadio: Hernando Siles</div>
+          <div class="fixture-details">Hora: Por definirse</div>
+        </div>
+      </div>
+      <div class="fixture-card">
+        <img src="img/maracana.jpg" alt="Estadio 2">
+        <div class="fixture-info">
+          <div class="fixture-date">Fecha: 05/09/2024</div>
+          <div class="fixture-teams"><img src="img/bandera-brasil.jpg" class="img_1"><span>Brasil vs </span> <img
+              src="img/bandera-ecuador.jpg" class="img_1"><span>Ecuador</span></div>
+          <div class="fixture-details">Estadio: Maracaná</div>
+          <div class="fixture-details">Hora: Por definirse</div>
+        </div>
+      </div>
+      <div class="fixture-card">
+        <img src="img//peru.jpg" alt="Estadio 2">
+        <div class="fixture-info">
+          <div class="fixture-date">Fecha: 05/09/2024</div>
+          <div class="fixture-teams"><img src="img/bandera-peru.jpg" class="img_1"><span>Perú vs </span> <img
+              src="img/colombia.jpg" class="img_1"><span>Colombia</span></div>
+
+          <div class="fixture-details">Estadio: Estadio Nacional de Lima</div>
+          <div class="fixture-details">Hora: Por definirse</div>
+        </div>
+      </div>
+      <div class="fixture-card">
+        <img src="img/kempes.jpg" alt="Estadio 2">
+        <div class="fixture-info">
+          <div class="fixture-date">Fecha: 05/09/2024</div>
+          <div class="fixture-teams"><img src="img/bandera-argentina.jpg" class="img_1"><span>Argentina vs </span> <img
+              src="img/bandera-chile.jpg" class="img_1"><span>Chile</span></div>
+
+          <div class="fixture-details">Estadio: Mario Alberto Kempes</div>
+          <div class="fixture-details">Hora: Por definirse</div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
 </body>
 
 </html>

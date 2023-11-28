@@ -1,7 +1,7 @@
 .cards-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-between; 
   }
 
   .fixture-card {
@@ -11,7 +11,7 @@
     border: 1px solid #ddd;
     border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
   }
 
   .fixture-card img {
@@ -55,6 +55,126 @@
 
   .fixture-card .img_1 {
     margin-right: 10px;
+
+
     width: 30px;
     height: auto;
   }
+
+  .resul {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+  .tarjeta {
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 10px;
+}
+
+.equipo .img_1 {
+  margin-right: 10px;
+    width: 30px;
+    height: auto;
+    
+    
+}
+
+.contenedor {
+  text-align: center;
+  border: 1px solid #ccc;
+  padding: 15px;
+  color: #fff;
+  background-color: black;
+  border-radius: 8px;
+  margin: 10px;
+  font-size: 70px;
+}
+
+.contenedor img {
+  max-width: 100%;
+  height: auto;
+  width: 80px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  
+}
+
+.contenido {
+    padding: 15px;
+}
+
+.equipo {
+    font-weight: bold;
+}
+
+.resultado {
+    margin-top: 10px;
+}
+.mostrar-mas {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.mostrar-mas a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+th, td .img_1{
+  margin-right: 10px;
+  width: 30px;
+  height: auto;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+.partidos_fondo{
+  background-image: url('/EyA_SAS/img/conmebol.jpg'); 
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  background-position: center; 
+  margin: 0; 
+  height: 100vh; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: aqua;
+}
+
+.equipos_fondo{
+  display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+}
+.equipos_fondo .column {
+  text-align: center;
+}
+
+.equipos_fondo  .column img {
+  max-width: 100%;
+  width: 50px;
+  height: auto;
+}
