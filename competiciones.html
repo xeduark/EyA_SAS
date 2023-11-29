@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/162e2e5f40.js"></script>
     <title>Competiciones</title>
 </head>
+
 <body class="bg-emerald-400">
-     <!--menu INICIO-->
-     <div class="mx-auto">
+    <!--menu INICIO-->
+    <div class="mx-auto">
         <nav class="bg-cyan-950 py-6 relative">
             <div class="container_logo flex px-8 xl:px-0">
                 <div class="flex flex-grow items-center">
@@ -20,13 +24,12 @@
                 <div id="menu"
                     class="lg:flex hidden flex-grow justify-between absolute lg:relative lg:top-0 top-20 left-0 bg-cyan-950 w-full lg:w-auto items-center py-14 lg:py-0 px-8 sm:px-24 lg:px-0">
                     <div class="flex flex-col lg:flex-row mb-8 lg:mb-0 sm:text-center">
-                        <a href="/index.html"
-                            class="text-zinc-100 hover:text-emerald-400 lg:mr-7 mb-8 lg:mb-0">Home</a>
+                        <a href="/index.html" class="text-zinc-100 hover:text-emerald-400 lg:mr-7 mb-8 lg:mb-0">Home</a>
                         <a href="./EyA_SAS/partidos.html"
                             class="text-zinc-100 hover:text-emerald-400 lg:mr-7 mb-8 lg:mb-0">Partidos</a>
                         <a href="./selecciones/equipos.html"
                             class="text-zinc-100 hover:text-emerald-400 lg:mr-7 mb-8 lg:mb-0">Equipos</a>
-                        
+
                         <a href="https://www.rojadirectaenvivo.nl/" class="text-zinc-100 hover:text-emerald-400 ">Tv</a>
                     </div>
                     <div class="flex flex-col lg:flex-row text-center">
@@ -40,55 +43,150 @@
             </div>
         </nav>
         <!--Fin Menu-->
-    <div class="container mx-auto mt-8">
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-            <!-- Carta 1 -->
-            <div class="max-w-sm rounded overflow-hidden shadow-lg bg-white">
-                <img class="w-full h-48 object-cover" src="liga1.jpg" alt="Liga 1">
-                <div class="px-6 py-4">
-                    <div class="font-bold text-xl mb-2">Liga 1</div>
-                    <p class="text-gray-700 text-base">
-                        Descripción de la Liga 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    </p>
+        <div class="container mx-auto mt-8">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                <!-- Carta 1 -->
+                <div class="max-w-sm rounded overflow-hidden shadow-100-lg bg-white">
+                    <img class="w-full h-48 object-contain" src="/imagenes/champions.png" alt="Liga 1">
+                    <div class="px-6 py-4">
+                        <div class="text-center font-bold text-xl mb-2">Champions League</div>
+                        <p class="text-center text-gray-700 text-base">
+                            La Liga de Campeones de la UEFA, también conocida como Copa de Europa, es el torneo
+                            internacional oficial de fútbol más prestigioso a nivel de clubes en Europa
+                        </p>
+                    </div>
                 </div>
-            </div>
-    
-            <!-- Carta 2 -->
-            <div class="max-w-sm rounded overflow-hidden shadow-lg bg-white">
-                <img class="w-full h-48 object-cover" src="liga2.jpg" alt="Liga 2">
-                <div class="px-6 py-4">
-                    <div class="font-bold text-xl mb-2">Liga 2</div>
-                    <p class="text-gray-700 text-base">
-                        Descripción de la Liga 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    </p>
-                </div>
-            </div>
-    
-            <!-- Carta 3 -->
-            <div class="max-w-sm rounded overflow-hidden shadow-lg bg-white">
-                <img class="w-full h-48 object-cover" src="liga3.jpg" alt="Liga 3">
-                <div class="px-6 py-4">
-                    <div class="font-bold text-xl mb-2">Liga 3</div>
-                    <p class="text-gray-700 text-base">
-                        Descripción de la Liga 3. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    </p>
-                </div>
-            </div>
-    
-            <!-- Puedes agregar más cartas según sea necesario -->
-    
-        </div>
-    </div>
-    <script>
-        function abrirmenu() {
-            let menu = document.getElementById("menu");
 
-            if (menu.classList.contains("hidden")) {    //esto identifica si la clase hidden esta en el menu//
-                menu.classList.remove("hidden");
-            } else {
-                menu.classList.add("hidden");
+                <!-- Carta 2 -->
+                <div class="max-w-sm rounded overflow-hidden shadow-lg bg-white">
+                    <img class="w-full h-48 object-cover" src="/imagenes/premier.png" alt="Liga 2">
+                    <div class="px-6 py-4">
+                        <div class="text-center font-bold text-xl mb-2">Premier League</div>
+                        <p class="text-center text-gray-700 text-base">
+                            La Premier League, también conocida en Inglaterra como The Premiership, es la máxima
+                            categoría del sistema de ligas de fútbol de Inglaterra
+                        </p>
+                    </div>
+                </div>
+                <!-- Carta 3 -->
+                <div class="max-w-sm rounded overflow-hidden shadow-lg bg-white">
+                    <img class="w-full h-48 object-cover" src="/imagenes/europa.png" alt="Liga 2">
+                    <div class="px-6 py-4">
+                        <div class="text-center font-bold text-xl mb-2">Europa League</div>
+                        <p class="text-center text-gray-700 text-base">
+                            La Liga Europa de la UEFA, conocida en sus orígenes como Copa de la UEFA, es una competición
+                            continental de clubes
+                        </p>
+                    </div>
+                </div>
+                <!-- Carta 4 -->
+                <div class="max-w-sm rounded overflow-hidden shadow-lg bg-white">
+                    <img class="w-full h-48 object-cover" src="/imagenes/laliga.png" alt="Liga 2">
+                    <div class="px-6 py-4">
+                        <div class="text-center font-bold text-xl mb-2">LaLiga</div>
+                        <p class="text-center text-gray-700 text-base">
+                            La Primera División de España o LaLiga, cuyo nombre comercial es LaLiga EA Sports
+                        </p>
+                    </div>
+                </div>
+                <!-- Carta 5 -->
+                <div class="max-w-sm rounded overflow-hidden shadow-lg bg-white">
+                    <img class="w-full h-48 object-cover" src="/imagenes/serie a.png" alt="Liga 2">
+                    <div class="px-6 py-4">
+                        <div class="text-center font-bold text-xl mb-2">Serie A</div>
+                        <p class="text-center text-gray-700 text-base">
+                            La Serie A de Italia, en España también conocida popularmente como "calcio" y llamada
+                            oficialmente, por motivos de patrocinio, como Serie A TIM
+                        </p>
+                    </div>
+                </div>
+                <!-- Carta 6 -->
+                <div class="max-w-sm rounded overflow-hidden shadow-lg bg-white">
+                    <img class="w-full h-48 object-cover" src="/imagenes/bundesliga.png" alt="Liga 2">
+                    <div class="px-6 py-4">
+                        <div class="text-center font-bold text-xl mb-2">Bundesliga</div>
+                        <p class="text-center text-gray-700 text-base">
+                            La Bundesliga es la competición entre los equipos de fútbol de la máxima categoría de Alemania
+                        </p>
+                    </div>
+                </div>
+                <!-- Carta 7 -->
+                <div class="max-w-sm rounded overflow-hidden shadow-lg bg-white">
+                    <img class="w-full h-48 object-cover" src="/imagenes/ligue 1.png" alt="Liga 2">
+                    <div class="px-6 py-4">
+                        <div class="text-center font-bold text-xl mb-2">Ligue 1</div>
+                        <p class="text-center text-gray-700 text-base">
+                            La Ligue 1 Ligue 1 Uber Eats por motivos de patrocinio,  y oficialmente como Campeonato de fútbol francés
+                        </p>
+                    </div>
+                </div>
+                <!-- Carta 8 -->
+                <div class="max-w-sm rounded overflow-hidden shadow-lg bg-white">
+                    <img class="w-full h-48 object-cover" src="/imagenes/eredivisie.png" alt="Liga 2">
+                    <div class="px-6 py-4">
+                        <div class="text-center font-bold text-xl mb-2">Eredivisie</div>
+                        <p class="text-center text-gray-700 text-base">
+                            La Eredivisie, también conocida como División de Honor de los Países Bajos, es la máxima categoría del sistema de Ligas de fútbol de los Países Bajos
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+<br>
+<br>
+        <footer>
+            <div class="row">
+                <div class="col">
+                    <h1 class="logo2">E&A Sports</h1>
+                    <p>Recibe las últimas actualizaciones y noticias directamente en tu correo electrónico</p>
+                </div>
+                <div class="col">
+                    <h3>Office <div class="underline"><span></span></div></h3>
+                    <p>ITPL Road</p>
+                    <p>Medellin, Antioquia</p>
+                    <p>PIN 650054, Colombia</p>
+                    <p class="email-id">E&ASports@gmail.com</p>
+                    <h4>+97 - 3242330008</h4>
+                </div>
+                <div class="col">
+                    <h3>Links <div class="underline"><span></span></div></h3>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">Contacts</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h3>Newsletter <div class="underline"><span></span></div></h3>
+                    <form action="">
+                        <i class="fa-regular fa-envelope"></i>
+                        <input type="email" placeholder="Enter your Email" required>
+                        <button type="submit"><i class="fa-solid fa-arrow-right"></i></button>
+                    </form>
+                    <div class="social-icons">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <i class="fa-brands fa-pinterest"></i>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <p class="cop">E&A Sports 2023 | All Rigths Reserved</p>
+        </footer>
+        <script>
+            function abrirmenu() {
+                let menu = document.getElementById("menu");
+
+                if (menu.classList.contains("hidden")) {    //esto identifica si la clase hidden esta en el menu//
+                    menu.classList.remove("hidden");
+                } else {
+                    menu.classList.add("hidden");
+                }
             }
-        }
-    </script>
+        </script>
 </body>
+
 </html>
