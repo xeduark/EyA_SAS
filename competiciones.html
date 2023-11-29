@@ -20,11 +20,13 @@
                 <div id="menu"
                     class="lg:flex hidden flex-grow justify-between absolute lg:relative lg:top-0 top-20 left-0 bg-cyan-950 w-full lg:w-auto items-center py-14 lg:py-0 px-8 sm:px-24 lg:px-0">
                     <div class="flex flex-col lg:flex-row mb-8 lg:mb-0 sm:text-center">
+                        <a href="/index.html"
+                            class="text-zinc-100 hover:text-emerald-400 lg:mr-7 mb-8 lg:mb-0">Home</a>
                         <a href="./EyA_SAS/partidos.html"
                             class="text-zinc-100 hover:text-emerald-400 lg:mr-7 mb-8 lg:mb-0">Partidos</a>
                         <a href="./selecciones/equipos.html"
                             class="text-zinc-100 hover:text-emerald-400 lg:mr-7 mb-8 lg:mb-0">Equipos</a>
-                        <a href="competiciones.html" class="text-zinc-100 hover:text-emerald-400 lg:mr-7 mb-8 lg:mb-0">Competiciones</a>
+                        
                         <a href="https://www.rojadirectaenvivo.nl/" class="text-zinc-100 hover:text-emerald-400 ">Tv</a>
                     </div>
                     <div class="flex flex-col lg:flex-row text-center">
@@ -77,6 +79,16 @@
     
         </div>
     </div>
-    
+    <script>
+        function abrirmenu() {
+            let menu = document.getElementById("menu");
+
+            if (menu.classList.contains("hidden")) {    //esto identifica si la clase hidden esta en el menu//
+                menu.classList.remove("hidden");
+            } else {
+                menu.classList.add("hidden");
+            }
+        }
+    </script>
 </body>
 </html>

@@ -4,13 +4,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="/EyA_SAS/partidos.css">
+  <script src="https://kit.fontawesome.com/162e2e5f40.js"></script>
   <title>Selecciones de la Conmebol</title>
-  <a href="/EyA_SAS/index.html">home</a>
 
 </head>
 
-<body class="equipos_fondo">
+<body class="equipos_fondo bg-emerald-600">
   <!--menu INICIO-->
   <div class="mx-auto">
     <nav class="bg-cyan-950 py-6 relative">
@@ -19,17 +20,15 @@
           <h2 class="text-zinc-100 text-3xl ml-4">E&A Sports</h2>
         </div>
         <div class="flex lg:hidden">
-          <img src="imagenes/menu-regular-48.png" onclick="abrirmenu();">
+          <img src="/imagenes/menu-regular-48.png" onclick="abrirmenu();">
         </div>
         <div id="menu"
           class="lg:flex hidden flex-grow justify-between absolute lg:relative lg:top-0 top-20 left-0 bg-cyan-950 w-full lg:w-auto items-center py-14 lg:py-0 px-8 sm:px-24 lg:px-0">
           <div class="flex flex-col lg:flex-row mb-8 lg:mb-0 sm:text-center">
-            <a href="index.html" class="text-zinc-100 hover:text-emerald-400 lg:mr-7 mb-8 lg:mb-0">Partidos</a>
-            <a href="./EyA_SAS/partidos.html"
+            <a href="index.html" class="text-zinc-100 hover:text-emerald-400 lg:mr-7 mb-8 lg:mb-0">Home</a>
+            <a href="/EyA_SAS/partidos.html"
               class="text-zinc-100 hover:text-emerald-400 lg:mr-7 mb-8 lg:mb-0">Partidos</a>
-            <a href="./selecciones/equipos.html"
-              class="text-zinc-100 hover:text-emerald-400 lg:mr-7 mb-8 lg:mb-0">Equipos</a>
-            <a href="#" class="text-zinc-100 hover:text-emerald-400 lg:mr-7 mb-8 lg:mb-0">Competiciones</a>
+            <a href="/competiciones.html" class="text-zinc-100 hover:text-emerald-400 lg:mr-7 mb-8 lg:mb-0">Competiciones</a>
             <a href="https://www.rojadirectaenvivo.nl/" class="text-zinc-100 hover:text-emerald-400 ">Tv</a>
           </div>
           <div class="flex flex-col lg:flex-row text-center">
@@ -43,7 +42,9 @@
       </div>
     </nav>
     <!--Fin Menu-->
-
+<br>
+<br>
+<br>
     <div class="column">
       <a href="colombia.html"><img src="/EyA_SAS/img/colombia.jpg" alt="Imagen 1"></a>
 
@@ -92,7 +93,63 @@
       <a href="/chile.html"><img src="/EyA_SAS/img/bandera-chile.jpg" alt="Imagen 3"></a>
       <p>Chile</p>
     </div>
+    <br>
+    <br>
+    <br>
+<!--inicio pie de pag-->
+    <footer>
+      <div class="row">
+          <div class="col">
+              <h1 class="logo2">E&A Sports</h1>
+              <p>Recibe las últimas actualizaciones y noticias directamente en tu correo electrónico</p>
+          </div>
+          <div class="col">
+              <h3>Office <div class="underline"><span></span></div></h3>
+              <p>ITPL Road</p>
+              <p>Medellin, Antioquia</p>
+              <p>PIN 650054, Colombia</p>
+              <p class="email-id">E&ASports@gmail.com</p>
+              <h4>+97 - 3242330008</h4>
+          </div>
+          <div class="col">
+              <h3>Links <div class="underline"><span></span></div></h3>
+              <ul>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Services</a></li>
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">Features</a></li>
+                  <li><a href="#">Contacts</a></li>
+              </ul>
+          </div>
+          <div class="col">
+              <h3>Newsletter <div class="underline"><span></span></div></h3>
+              <form action="">
+                  <i class="fa-regular fa-envelope"></i>
+                  <input type="email" placeholder="Enter your Email" required>
+                  <button type="submit"><i class="fa-solid fa-arrow-right"></i></button>
+              </form>
+              <div class="social-icons">
+                  <i class="fa-brands fa-facebook-f"></i>
+                  <i class="fa-brands fa-twitter"></i>
+                  <i class="fa-brands fa-whatsapp"></i>
+                  <i class="fa-brands fa-pinterest"></i>
+              </div>
+          </div>
+      </div>
+      <hr>
+      <p class="cop">E&A Sports 2023 | All Rigths Reserved</p>
+  </footer>
+  <script>
+    function abrirmenu() {
+        let menu = document.getElementById("menu");
 
+        if (menu.classList.contains("hidden")) {    //esto identifica si la clase hidden esta en el menu//
+            menu.classList.remove("hidden");
+        } else {
+            menu.classList.add("hidden");
+        }
+    }
+</script>
 </body>
 
 </html>
